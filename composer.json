@@ -1,0 +1,14 @@
+{
+	"name": "kotygor/opencart-product-grid-top-row",
+	"description": "Винесення рядка сортування над товарною сіткою (в категорії/пошуку/сторінці виробника) в окремий контроллер",
+	"type": "opencart-extension",
+	"extra": {
+		"src-dir"		: "upload",
+		"installers"	: {
+			"xml" : "install.xml"
+		},
+		"mappings": [
+
+		]
+	}
+}

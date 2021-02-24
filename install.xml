@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Product grid top</name>
+	<version>0.1</version>
+	<author>JD</author>
+	<link>zelenuj@gmail.com</link>
+	<code>Product grid top</code>
+	<file path="catalog/controller/product/{category,manufacturer}.php">
+		<operation>
+		    <search><![CDATA[
+		    $data['sorts'] = array();
+		    ]]></search>
+		    <add position="replace" offset="56"><![CDATA[
+		    // << kotygor_opencart_product_grid_top_row.ocmod.xml
+			$data['sorts'] = $this->load->controller('product/grid_top_row');
+		    // >> kotygor_opencart_product_grid_top_row.ocmod.xml
+		    ]]></add>
+		</operation>
+		
+	</file>
+</modification>
